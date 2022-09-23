@@ -9,10 +9,10 @@ function App() {
 
   return (
     <div className='container'>
-      <p className='text-center text-green-500 bold'>
+      {/* <p className='text-center text-green-500 bold'>
         hello world
-      </p>
-        <div className='relative'>
+      </p> */}
+        <div className='relative w-screen'>
 
         <BackgroundImage
             title="test 1"

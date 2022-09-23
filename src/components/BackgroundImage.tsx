@@ -1,13 +1,13 @@
 
 function BackgroundImage(props: {title: string, img: string}) {
     return (
-        <div className='h-screen'
+        <div className='h-screen flex justify-center items-center'
         style={{
             backgroundImage: `url(${props.img})`,
             backgroundSize: "cover",
             backgroundPosition: "center center"
             }}>
-            title is: {props.title}
+            <h2 className="text-white">{props.title}</h2>
         </div>
     )
 }
