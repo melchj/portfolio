@@ -3,15 +3,19 @@
 // https://www.w3schools.com/howto/howto_css_parallax.asp
 function BackgroundImage(props: {title: string, img: string}) {
     return (
-        <div className='h-screen     justify-center items-center'
+        <div className='relative flex h-screen justify-center items-center'
         style={{
             backgroundImage: `url(${props.img})`,
             backgroundSize: "cover",
             backgroundPosition: "center center",
             backgroundAttachment: "fixed"
             }}>
-                <div className="fixed flex justify-center">
-                <h2 className="text-white text-4xl font-bold">{props.title}</h2>
+                <div className="fixed flex justify-center items-center"
+                style={{
+                    top: "50%",
+                    transform: "translate(0, -50%)"
+                }}>
+                    <h2 className="text-white text-4xl font-bold">{props.title}</h2>
                 </div>
         </div>
     )
